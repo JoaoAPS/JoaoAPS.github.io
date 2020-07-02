@@ -6,12 +6,10 @@ $(document).ready(() => {
     if (navVisible) {
       $(".nav").removeClass("nav_visible")
       $(".burger").removeClass("burger_close")
-      $("header").css("opacity", "1")
       navVisible = false
     } else {
       $(".nav").addClass("nav_visible")
       $(".burger").addClass("burger_close")
-      $("header").css("opacity", "0")
       navVisible = true
     }
   }

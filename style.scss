@@ -43,6 +43,9 @@ section {
     text-align: center;   
     color: $emphasis-color-muted;
     margin-bottom: 1rem;
+    
+    position: sticky;
+    top: 0;
 }
 
 a {
@@ -76,6 +79,7 @@ header {
     
     background-color: $nav-background-color;
     text-align: center;
+    z-index: 10;
     
     //Animation
     transform: translateX(100%);
@@ -220,3 +224,7 @@ header {
 }
 
 //--- footer ---
+footer {
+    text-align: right;
+    color: $text-muted;
+}

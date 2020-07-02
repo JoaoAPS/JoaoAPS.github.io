@@ -26,6 +26,9 @@ section {
   text-align: center;
   color: #404db0;
   margin-bottom: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 a {
@@ -57,6 +60,7 @@ header {
   padding-top: 5vh;
   background-color: #767676;
   text-align: center;
+  z-index: 10;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -203,5 +207,10 @@ header {
 
 .contato_endereco {
   color: black;
+}
+
+footer {
+  text-align: right;
+  color: #7f7f7f;
 }
 /*# sourceMappingURL=style.css.map */
