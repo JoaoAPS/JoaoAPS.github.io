@@ -16,4 +16,14 @@ $(document).ready(() => {
 
   $(".burger").click(toggleNav)
   $(".nav_item").find("a").click(toggleNav)
+
+  $(window).scroll(function () {
+    var windscroll = $(window).scrollTop()
+    $(".content section").each(function (i) {
+      if ($(this).position().top <= windscroll) {
+        $(".nav .active").removeClass("active")
+        $(".nav .nav_item").eq(i).addClass("active")
+      }
+    })
+  }) //.scroll()
 })

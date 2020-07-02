@@ -1,0 +1,128 @@
+$nav-height: 60px;
+
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@media (min-width: 750px) {
+
+.content {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.sec-title {
+    position: static;
+}
+
+section {
+    padding-top: $nav-height;
+    margin-top: 2rem;
+}
+
+//--- Header ---
+.burger {
+    display: none;
+}
+
+header {
+    display: none;
+}
+
+.nav {
+    width: 100vw;
+    height: $nav-height;
+    padding: 0 15vw;
+    margin: 0;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    
+    display: flex;
+    align-items: center;
+    
+    & ul {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &_item {
+        margin: 0;
+        
+        a {
+            transition: all 0.3s;
+            
+            &:hover {
+                color: $emphasis-color;
+                text-decoration: none;
+            }   
+        }
+    }
+}
+/*
+.active a {
+    color: $emphasis-color-muted;
+}
+*/
+//--- Home ---
+#sec-home {
+    padding-top: 35vh;
+    height: 100vh;
+    padding-bottom: -$nav-height;
+}
+
+.saudacao {
+    padding-left: 100px;
+    animation: "fade-in" 1s backwards;
+}
+
+.name {
+    display: block;
+    text-align: center;
+    animation: "fade-in" 1s 0.8s backwards;
+    
+    &_first, &_last {
+        display: inline-block;
+    }
+}
+
+
+.titulos {
+    text-align: center;
+    animation: "fade-in" 1s 1.5s backwards;
+}
+
+//--- Conhecimentos ---
+.conhecimentos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.area-atuacao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+//--- Sobre ---
+.texto-sobre {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//--- Contato ---
+.contatos {
+    margin-left: 5rem;
+}
+
+}

@@ -3,148 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>João Paludo</title>
-  
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Portifolio - João Paludo</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/7c1f73c066.js" crossorigin="anonymous"></script>
-    
+
     <script src="jquery-3.5.1.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header>
-    </header>
-    
+    <header></header>
+
     <nav>
       <div class="nav">
-      <ul>
-        <li class="nav_item"><a href="#sec-home">Home</a></li>
-        <li class="nav_item"><a href="#sec-conhecimentos">Conhecimentos</a></li>
-        <li class="nav_item"><a href="#sec-projetos">Projetos</a></li>
-        <li class="nav_item"><a href="#sec-sobre">Sobre</a></li>
-        <li class="nav_item"><a href="#sec-contato">Contato</a></li>
-      </ul>
-    </div>
+        <ul>
+          <li class="nav_item active"><a href="#sec-home">Home</a></li>
+          <li class="nav_item"><a href="#sec-conhecimentos">Conhecimentos</a></li>
+          <li class="nav_item"><a href="#sec-projetos">Projetos</a></li>
+          <li class="nav_item"><a href="#sec-sobre">Sobre</a></li>
+          <li class="nav_item"><a href="#sec-contato">Contato</a></li>
+        </ul>
+      </div>
     </nav>
-    
+
     <div class="burger"><div class="burger_dash"></div></div>
 
-    <section id="sec-home">
-      <div class="saudacao">Olá! Meu nome é</div>
-      
-      <div class="name">
-        <div class="name_first">João Antonio</div>
-        <div class="name_last">Paludo Silveira</div>
-      </div>
+    <div class="content">
+      <section id="sec-home">
+        <div class="saudacao">Olá! Meu nome é</div>
 
-      <p class="titulos">Programador, Pesquisador e Desenvolvedor full stack</p>
-    </section>
+        <div class="name">
+          <div class="name_first">João Antonio</div>
+          <div class="name_last">Paludo Silveira</div>
+        </div>
 
-    <section id="sec-conhecimentos">
-      <div class="sec-title"><h2>Conhecimentos</h2></div>
+        <p class="titulos">Programador, Pesquisador e Desenvolvedor full stack</p>
+      </section>
 
-      <div class="area-atuacao">
-        <h4>Programação</h4>
-        <ul>
-          <li class="conhecimento">Python</li>
-          <li class="conhecimento">Julia</li>
-          <li class="conhecimento">C/C++</li>
-          <li class="conhecimento">Javascript</li>
+      <section id="sec-conhecimentos">
+        <div class="sec-title"><h2>Conhecimentos</h2></div>
+
+        <div class="conhecimentos">
+          <div class="area-atuacao">
+            <h4>Programação</h4>
+            <ul>
+              <li class="conhecimento">Python</li>
+              <li class="conhecimento">Julia</li>
+              <li class="conhecimento">C/C++</li>
+              <li class="conhecimento">Javascript</li>
+            </ul>
+          </div>
+
+          <div class="area-atuacao">
+            <h4>Desenvolvimeto Web</h4>
+            <ul>
+              <li class="conhecimento">Html</li>
+              <li class="conhecimento">CSS/SCSS</li>
+              <li class="conhecimento">Javascript</li>
+              <li class="conhecimento">JQuery</li>
+              <li class="conhecimento">React</li>
+              <li class="conhecimento">Django</li>
+            </ul>
+          </div>
+
+          <div class="area-atuacao">
+            <h4>Análise de Dados</h4>
+            <ul>
+              <li class="conhecimento">Confecção de Gráficos <br />(Matplotlib)</li>
+              <li class="conhecimento">Aprendizado de Máquina <br />(Sklearn)</li>
+              <li class="conhecimento">Redes Neurais <br />(Tensorflow)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-projetos">
+        <div class="sec-title"><h2>Projetos</h2></div>
+      </section>
+
+      <section id="sec-sobre">
+        <div class="sec-title"><h2>Sobre</h2></div>
+
+        <div class="texto-sobre">
+          <p>
+            Sou físico bacharel formado pela Universidade Federal do Paraná, e possuo mestrado em
+            Física pela mesma universidade.
+          </p>
+
+          <p>
+            A programação me acompanhou de perto durante minha formação, sendo usada principalmente
+            para simulação númerica e evolução de modelos matemáticos. Nesse âmbito pude adquirir
+            experiência em várias linguagens de
+            <span class="emph">programação</span> e em <span class="emph">análise de dados</span>,
+            sobretudo na confecção de gráficos.
+          </p>
+
+          <p>
+            Seguindo uma paixão por programação me interessei por
+            <span class="emph">desenvolvimeto web</span> como um hobby, e tive a oportunidade de
+            desenvolver alguns <a href="#">projetos</a>
+            no tempo livre. Gostaria de tranformar esse hobby em uma carreira, e para isso mantenho
+            constante o desenvolvimeto de novas habilidades nessa área, procurando conhecer sempre
+            mais ferramentes, frameworks e técnicas. Neste mesmo objetivo, acolho com gratidão
+            convites e oportunidades de adquirir mais experiência na área.
+          </p>
+
+          <p>
+            Pensamento crítico e bom entendimento e resolução de problemas são características
+            vitais para um físico, e são aplicáveis em ambientes muito além do acadêmico. Me
+            considero uma pessoa de rápida aprendizagem, e sou capaz de me adequar rapidamente a
+            novos ambientes e novas técnicas de trabalho.
+          </p>
+        </div>
+      </section>
+
+      <section id="sec-contato">
+        <div class="sec-title"><h2>Contato</h2></div>
+
+        <ul class="contatos">
+          <li class="contato">
+            <span class="contato_label"><i class="fa-envelope fas"></i></span>
+            <span class="contato_endereco">jas.paludo@gmail.com</span>
+          </li>
+          <li class="contato">
+            <span class="contato_label"><i class="fa-github fab"></i></span>
+            <a href="https://github.com/JoaoAPS">
+              <span class="contato_endereco">
+                https://github.com/JoaoAPS
+              </span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="area-atuacao">
-        <h4>Desenvolvimeto Web</h4>
-        <ul>
-          <li class="conhecimento">Html</li>
-          <li class="conhecimento">CSS/SCSS</li>
-          <li class="conhecimento">Javascript</li>
-          <li class="conhecimento">JQuery</li>
-          <li class="conhecimento">React</li>
-          <li class="conhecimento">Django</li>
-        </ul>
-      </div>
-
-      <div class="area-atuacao">
-        <h4>Análise de Dados</h4>
-        <ul>
-          <li class="conhecimento">Confecção de Gráficos <br/>(Matplotlib)</li>
-          <li class="conhecimento">Aprendizado de Máquina <br/>(Sklearn)</li>
-          <li class="conhecimento">Redes Neurais <br/>(Tensorflow)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="sec-projetos">
-      <div class="sec-title"><h2>Projetos</h2></div>
-    </section>
-
-    <section id="sec-sobre">
-      <div class="sec-title"><h2>Sobre</h2></div>
-      
-      <div class="texto-sobre">
-      <p>
-        Sou físico bacharel formado pela Universidade Federal do Paraná,
-        e possuo mestrado em Física pela mesma universidade.
-      </p>
-      
-      <p>
-        A programação me acompanhou de perto durante minha formação,
-        sendo usada principalmente para simulação númerica e evolução de 
-        modelos matemáticos.
-        Nesse âmbito pude adquirir experiência em várias linguagens de
-        <span class="emph">programação</span> e em 
-        <span class="emph">análise de dados</span>, sobretudo na confecção de
-        gráficos.
-      </p>
-      
-      <p>
-        Seguindo uma paixão por programação me interessei por
-        <span class="emph">desenvolvimeto web</span> como um hobby,
-        e tive a oportunidade de desenvolver alguns <a href="#">projetos</a>
-        no tempo livre.
-        Gostaria de tranformar esse hobby em uma carreira, e para isso
-        mantenho constante o desenvolvimeto de novas habilidades nessa área,
-        procurando conhecer sempre mais ferramentes, frameworks e técnicas.
-        Neste mesmo objetivo, acolho com gratidão convites e oportunidades de 
-        adquirir mais experiência na área.
-      </p>
-      
-      <p>
-        Pensamento crítico e bom entendimento e resolução de problemas são 
-        características vitais para um físico, e são aplicáveis em ambientes muito além 
-        do acadêmico.
-        Me considero uma pessoa de rápida aprendizagem, e sou capaz de me
-        adequar rapidamente a novos ambientes e novas técnicas de trabalho.
-      </p>
+      <footer>
+        <div>&copy; Copyright 2020</div>
+      </footer>
     </div>
-      
-    </section>
-
-    <section id="sec-contato">
-      <div class="sec-title"><h2>Contato</h2></div>
-
-      <ul class="contatos">
-        <li class="contato">
-          <span class="contato_label"><i class="fa-envelope fas"></i></span>
-          <span class="contato_endereco">jas.paludo@gmail.com</span>
-        </li>
-        <li class="contato">
-          <span class="contato_label"><i class="fa-github fab"></i></span>
-          <a href="https://github.com/JoaoAPS">
-            <span class="contato_endereco">
-              https://github.com/JoaoAPS
-            </span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <div>&copy; Copyright 2020</div>
-    </footer>
   </body>
-  
 </html>
