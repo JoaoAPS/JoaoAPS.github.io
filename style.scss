@@ -1,0 +1,222 @@
+$background-color: whitesmoke;
+$text-regular: #1f1f1f;
+$text-focus: black;
+$text-unfocus: #3f3f3f;
+$text-muted: #7f7f7f;
+$emphasis-color: #1028e0;
+$emphasis-color-muted: desaturate($emphasis-color, 40%);
+
+$nav-background-color: darken($background-color, 50%);
+$nav-width: 80vw;
+$transition-duration: 0.5s;
+
+@mixin burger-dash {
+    width: 35px;
+    height: 2px;
+    background-color: $text-unfocus;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-regular;
+}
+
+section {
+    margin: 8rem 3rem;
+}
+
+.sec-title {
+    text-transform: uppercase;
+    text-align: center;   
+    color: $emphasis-color-muted;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover {
+        text-decoration: underline;
+        color: $emphasis-color;
+        font-weight: 500;
+    }
+}
+
+//--- Header ---
+header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 50px;
+    
+    background-color: $background-color;//darken($background-color, 5%);
+    transition: all 0.5s;
+}
+
+.nav {
+    width: $nav-width;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    padding-top: 5vh;
+    
+    background-color: $nav-background-color;
+    text-align: center;
+    
+    //Animation
+    transform: translateX(100%);
+    &_visible {
+        transform: translateX(0);
+    }
+    transition: transform $transition-duration ease-in-out;
+    
+    &_item {
+        list-style: none;
+        margin-top: 7vh;
+        
+        a {
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            
+            &:hover {
+                color: $emphasis-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.burger {
+    cursor: pointer;
+    
+    height: 30px;
+    width: 35px;
+    position: fixed;
+    top: 12px;
+    right: 25px;
+    
+    &_dash {
+        @include burger-dash;
+        position: absolute;
+        top: 15px;
+            
+        &::before {
+            content: '';
+            @include burger-dash;
+            position: absolute;
+            bottom: 7px;
+        }
+        
+        &::after {
+            content: '';
+            @include burger-dash;
+            position: absolute;
+            top: 7px;
+            transform: scaleX(0.8) translateX(10%);
+        }
+    }
+    
+    //Animation
+    transition: all $transition-duration (0.05*$transition-duration) ease-in-out;
+    &_close {
+        right: 0.8*($nav-width);
+        transform: rotate(180deg);
+    }
+}
+
+
+//--- Home ---
+#sec-home {
+    margin-top: 0;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.name {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &_last {
+        color: $emphasis-color;
+    }
+}
+
+.titulos {
+    color: $text-unfocus;
+}
+
+//--- Conhecimentos ---
+.area-atuacao {
+    margin-top: 1rem;
+    
+    & li {
+        list-style: none;
+    }
+}
+
+.conhecimento {
+    color: $text-unfocus;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+//--- Projetos ---
+
+
+//--- Sobre ---
+.emph {
+    color: $text-focus;
+    font-weight: bold;
+}
+
+.texto-sobre {
+    font-size: 0.9rem;
+    
+    & p {
+        margin-top: 1rem;
+    }
+}
+
+//--- Contato ---
+.contatos {
+    padding-top: 0.5rem;
+}
+
+.contato {
+    list-style: none;
+    margin-top: 1.5rem;
+    
+    &_label {
+        font-size: 0.8rem;
+        padding-right: 10px;
+        
+        //&::after {
+        //    content: ':'
+        //}
+    }
+    
+    &_endereco {
+        color: $text-focus;
+    }
+}
+
+//--- footer ---
