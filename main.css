@@ -182,6 +182,40 @@ header {
   color: #505050;
 }
 
+.especialidade {
+  margin-top: 1rem;
+}
+
+.especialidade:first-of-type {
+  margin-top: 0;
+}
+
+.especialidade-expandable {
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  right: 50px;
+  -webkit-transform: translateY(-15px) rotateZ(45deg);
+          transform: translateY(-15px) rotateZ(45deg);
+  width: 2px;
+  height: 10px;
+  background-color: #7f7f7f;
+}
+
+.arrow::before {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #7f7f7f;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+
 .area-atuacao {
   margin-top: 1rem;
 }
@@ -194,6 +228,14 @@ header {
   color: #505050;
   padding-top: 0.4rem;
   padding-left: 1rem;
+}
+
+.conhecimento small {
+  color: #7f7f7f;
+}
+
+#sec-projetos .sec-title {
+  color: #1028e0;
 }
 
 .emph {

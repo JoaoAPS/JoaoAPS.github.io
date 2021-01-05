@@ -20,8 +20,9 @@
       <div class="nav">
         <ul>
           <li class="nav_item active"><a href="#sec-home">Home</a></li>
+          <li class="nav_item"><a href="#sec-especialidades">Especialidades</a></li>
           <li class="nav_item"><a href="#sec-conhecimentos">Conhecimentos</a></li>
-          <li class="nav_item"><a href="#sec-projetos">Projetos</a></li>
+          <li class="nav_item"><a href="/portifolio">Projetos</a></li>
           <li class="nav_item"><a href="#sec-sobre">Sobre</a></li>
           <li class="nav_item"><a href="#sec-contato">Contato</a></li>
         </ul>
@@ -46,10 +47,31 @@
         <img src="images/foto.png" alt="Minha foto" class="foto">
       </section>
       
+      <section id="sec-especialidades">
+        <h2 class="sec-title">Especialidades</h2>
+        
+        <div class="container">
+          <h4 class="area-atuacao">Inglês Fluente</h4>
+          <h4 class="area-atuacao">Python</h4>
+          <h4 class="area-atuacao">Django</h4>
+          <h4 class="area-atuacao">Julia</h4>
+        </div>
+        
+      </section>
+      
       <section id="sec-conhecimentos">
         <div class="sec-title"><h2>Conhecimentos</h2></div>
 
         <div class="container conhecimentos">
+          
+          <div class="area-atuacao">
+            <h4>Idiomas</h4>
+            <ul>
+              <li class="conhecimento">Português <small>(nativo)</small></li>
+              <li class="conhecimento">Inglês    <small>(fluente)</small></li>
+              <li class="conhecimento">Alemão    <small>(Nível B1)</small></li>
+            </ul>
+          </div>
           
           <div class="area-atuacao">
             <h4>Programação</h4>
@@ -57,7 +79,6 @@
               <li class="conhecimento">Python</li>
               <li class="conhecimento">Julia</li>
               <li class="conhecimento">C/C++</li>
-              <li class="conhecimento">Javascript</li>
             </ul>
           </div>
 
@@ -69,6 +90,7 @@
               <li class="conhecimento">Javascript</li>
               <li class="conhecimento">JQuery</li>
               <li class="conhecimento">React</li>
+              <li class="conhecimento">Vue</li>
               <li class="conhecimento">Django</li>
             </ul>
           </div>
@@ -85,13 +107,17 @@
       </section>
 
       <section id="sec-projetos">
-        <div class="sec-title"><h2>Projetos</h2></div>
+        <div class="sec-title">
+          <a href="/portifolio">
+            <h2>Portifolio</h2> <i class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
       </section>
 
       <section id="sec-sobre">
         <div class="sec-title"><h2>Sobre</h2></div>
 
-        <div class="texto-sobre">
+        <div class="texto-sobre container">
           <p>
             Sou físico bacharel formado pela Universidade Federal do Paraná, e possuo mestrado em
             Física pela mesma universidade.
@@ -127,20 +153,30 @@
       <section id="sec-contato">
         <div class="sec-title"><h2>Contato</h2></div>
 
-        <ul class="contatos">
-          <li class="contato">
-            <span class="contato_label"><i class="fa-envelope fas"></i></span>
-            <span class="contato_endereco">jas.paludo@gmail.com</span>
-          </li>
-          <li class="contato">
-            <span class="contato_label"><i class="fa-github fab"></i></span>
-            <a href="https://github.com/JoaoAPS">
-              <span class="contato_endereco">
-                https://github.com/JoaoAPS
-              </span>
-            </a>
-          </li>
+        <div class="container">  
+          <ul class="contatos">
+            <li class="contato">
+              <span class="contato_label"><i class="fa-envelope fas"></i></span>
+              <span class="contato_endereco">jas.paludo@gmail.com</span>
+            </li>
+            
+            <li class="contato">
+              <a href="https://github.com/JoaoAPS">
+                <span class="contato_label"><i class="fa-github fab"></i></span>
+                <span class="contato_endereco">
+                  https://github.com/JoaoAPS
+                </span>
+              </a>
+            </li>
+            
+            <li class="contato">
+              <a href="https://github.com/JoaoAPS">
+                <span class="contato_label"><i class="fa-linkedin fab"></i></span>
+                <span class="contato_endereco">To be added</span>
+              </a>
+            </li>
         </ul>
+        </div>
       </section>
 
       <footer>

@@ -186,6 +186,42 @@ header {
     color: $text-unfocus;
 }
 
+//--- Especialidades ---
+.especialidade {
+    //text-align: center;
+    margin-top: 1rem;
+    
+    &:first-of-type {
+        margin-top: 0;
+    }
+    
+    &-expandable {
+        cursor: pointer;
+    }
+}
+
+.arrow {
+    position: absolute;
+    right: 50px;
+    transform: translateY(-15px) rotateZ(45deg);
+    
+    width: 2px;
+    height: 10px;
+    background-color: $text-muted;
+    
+    &::before {
+        content: "";
+        width: 2px;
+        height: 10px;
+        background-color: $text-muted;
+        transform: rotateZ(-90deg);
+        
+        position: absolute;
+        left: -5px;
+        top: 5px;
+    }
+}
+
 //--- Conhecimentos ---
 .area-atuacao {
     margin-top: 1rem;
@@ -199,10 +235,16 @@ header {
     color: $text-unfocus;
     padding-top: 0.4rem;
     padding-left: 1rem;
+    
+    & small {
+        color: $text-muted;
+    }
 }
 
 //--- Projetos ---
-
+#sec-projetos .sec-title {
+    color: $emphasis-color;
+}
 
 //--- Sobre ---
 .emph {
