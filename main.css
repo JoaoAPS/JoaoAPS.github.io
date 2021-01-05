@@ -14,15 +14,15 @@ html {
 
 body {
   background-color: whitesmoke;
-  color: #1f1f1f;
+  color: #303030;
 }
 
 section {
-  margin: 8rem 0rem;
+  margin: 4rem 0rem;
 }
 
-.content {
-  margin: 0 3rem;
+.container {
+  margin: 0 1rem;
 }
 
 .sec-title {
@@ -52,6 +52,8 @@ header {
   width: 100vw;
   height: 50px;
   background-color: whitesmoke;
+  background-image: url("images/header_sky.png");
+  background-size: cover;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -63,6 +65,8 @@ header {
   right: 0;
   padding-top: 5vh;
   background-color: #767676;
+  background-image: url("images/city_night_phone.jpg");
+  background-size: cover;
   text-align: center;
   z-index: 10;
   -webkit-transform: translateX(100%);
@@ -91,6 +95,7 @@ header {
 
 .active a {
   color: #404db0;
+  text-decoration: underline;
 }
 
 .burger {
@@ -108,7 +113,7 @@ header {
 .burger_dash {
   width: 35px;
   height: 2px;
-  background-color: #3f3f3f;
+  background-color: whitesmoke;
   position: absolute;
   top: 15px;
 }
@@ -117,7 +122,7 @@ header {
   content: '';
   width: 35px;
   height: 2px;
-  background-color: #3f3f3f;
+  background-color: whitesmoke;
   position: absolute;
   bottom: 7px;
 }
@@ -126,7 +131,7 @@ header {
   content: '';
   width: 35px;
   height: 2px;
-  background-color: #3f3f3f;
+  background-color: whitesmoke;
   position: absolute;
   top: 7px;
   -webkit-transform: scaleX(0.8) translateX(10%);
@@ -141,12 +146,21 @@ header {
 
 #sec-home {
   margin-top: 0;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+
+.foto {
+  width: 100vw;
+  margin-top: 10px;
+}
+
+.saudacao {
+  color: #303030;
 }
 
 .name {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +179,7 @@ header {
 }
 
 .titulos {
-  color: #3f3f3f;
+  color: #505050;
 }
 
 .area-atuacao {
@@ -177,7 +191,7 @@ header {
 }
 
 .conhecimento {
-  color: #3f3f3f;
+  color: #505050;
   padding-top: 0.4rem;
   padding-left: 1rem;
 }
