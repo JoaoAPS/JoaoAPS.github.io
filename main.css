@@ -315,6 +315,7 @@ footer {
     height: 60px;
     padding: 0 15vw;
     margin: 0;
+    background-image: url("images/header_sky.jpg");
     position: fixed;
     top: 0;
     left: 0;
@@ -358,6 +359,21 @@ footer {
     height: 100vh;
     padding-bottom: -60px;
   }
+  #sec-home .container {
+    width: 500px;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  .foto {
+    width: 500px;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: -1;
+  }
   .saudacao {
     padding-left: 100px;
     -webkit-animation: "fade-in" 1s backwards;
@@ -368,6 +384,7 @@ footer {
     text-align: center;
     -webkit-animation: "fade-in" 1s 0.8s backwards;
             animation: "fade-in" 1s 0.8s backwards;
+    margin: 3rem 0;
   }
   .name_first, .name_last {
     display: inline-block;
