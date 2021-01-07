@@ -621,6 +621,7 @@ footer {
 @media (min-width: 750px) {
   .card {
     width: 45%;
+    cursor: pointer;
   }
   .card-container {
     max-width: 800px;

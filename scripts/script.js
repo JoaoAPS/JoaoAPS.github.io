@@ -17,6 +17,19 @@ $(document).ready(() => {
   let card_expand_icon = $("<i></i>").addClass("fas fa-angle-down card-title-expand")
   $(".card-title").append(card_expand_icon)
 
+  // --- Desktop responsive ---
+  // Portifolio links
+  if ($(window).width() >= 750) {
+    $(".card").each(function () {
+      let url = $(this).children(".card-link")[0].href
+
+      console.log(url)
+
+      $(this).click(() => {
+        window.location.href = url
+      })
+    })
+  }
   // -------------------------
 
   //--- Navbar toggling ---
