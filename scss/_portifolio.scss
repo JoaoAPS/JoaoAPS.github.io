@@ -84,6 +84,7 @@
     border-radius: 10px 10px;
     box-shadow: 0px 0 2px -1px gray;
     
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,5 +157,15 @@
         &:hover {
             color: $emphasis-color;
         }
+    }
+    
+    &-watermark {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.2;
+        
+        width: 80px;
+        height: 80px;
     }
 }
