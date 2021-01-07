@@ -442,7 +442,7 @@ footer {
 }
 
 .port-name {
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   font-size: 1rem;
   color: #404db0;
 }
@@ -453,6 +453,54 @@ footer {
 
 .content h1 {
   text-align: center;
+}
+
+.filter-container {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.filter-heading {
+  text-align: right;
+  padding-right: 15px;
+  color: black;
+  cursor: pointer;
+  border-bottom: #505050 1px solid;
+}
+
+.filter-options {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #ddd;
+  border-radius: 5px 5px;
+}
+
+.filter-option {
+  min-width: 50%;
+  padding: 10px 3px;
+  color: #505050;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-option-active {
+  color: darkgreen;
+}
+
+.filter-clear {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #404db0;
+  cursor: pointer;
 }
 
 .project::before {

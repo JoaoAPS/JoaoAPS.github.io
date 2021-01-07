@@ -1,6 +1,6 @@
 .port {
     &-name {
-        margin-top: 1rem;
+        margin-top: 0.2rem;
         font-size: 1rem;
         color: $emphasis-color-muted;
     }
@@ -14,6 +14,57 @@
     text-align: center;
 }
 
+// Filter
+.filter {
+    &-container {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    
+    &-heading {
+        text-align: right;
+        padding-right: 15px;
+        color: $text-focus;
+        cursor: pointer;
+        
+        border-bottom: $text-unfocus 1px solid;
+    }
+    
+    &-options {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        
+        background: #ddd;
+        border-radius: 5px 5px;
+    }
+    
+    &-option {
+        min-width: 50%;
+        padding: 10px 3px;
+        color: $text-unfocus;
+        text-align: center;
+        cursor: pointer;
+        
+        &-active {
+            color: darkgreen;
+        }
+    }
+    
+    &-clear {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $emphasis-color-muted;
+        cursor: pointer;
+    }
+}
+
+
+// Items
 .project {
     &::before {
         content: '- '

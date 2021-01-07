@@ -1,8 +1,16 @@
 $(document).ready(() => {
   // ----- Initial state -----
+  // Navbar
   let navVisible = false
   $(".nav").removeClass("nav_visible")
 
+  // Portifolio Filter
+  let filterVisible = false
+  let activeFilters = []
+  $(".filter-options").hide()
+  $(".filter-option").removeClass("filter-option-active")
+
+  // Portifolio Cards
   let card_tag_title = $("<div></div>").addClass("card-tag-title").text("Used in project:")
   $(".card-tag-container").before(card_tag_title)
 
@@ -12,8 +20,9 @@ $(document).ready(() => {
   $(".card-description").hide()
   $(".card-link").hide()
   $(".card-tag-title").hide()
+  // -------------------------
 
-  // Navbar toggling
+  //--- Navbar toggling ---
   function toggleNav() {
     if (navVisible) {
       $(".nav").removeClass("nav_visible")
@@ -29,7 +38,7 @@ $(document).ready(() => {
   $(".burger").click(toggleNav)
   $(".nav_item").find("a").click(toggleNav)
 
-  // Window scroll events
+  //--- Window scroll events ---
   $(window).scroll(function () {
     var windscroll = $(window).scrollTop()
 
@@ -55,7 +64,7 @@ $(document).ready(() => {
     })
   })
 
-  // Portifolio cards expanding
+  //--- Portifolio cards expanding ---
   function expandCard() {
     $(this).siblings(".card-description").slideToggle()
     $(this).siblings(".card-link").slideToggle()
@@ -63,4 +72,73 @@ $(document).ready(() => {
   }
 
   $(".card-title").click(expandCard)
+
+  //--- Portifolio filter ---
+  // Open/close filter panel
+  $(".filter-heading").click(function () {
+    filterVisible = !filterVisible
+
+    if (filterVisible) {
+      $(this).text("Close filters ")
+      $(this).append($("<i></i>").addClass("fas fa-times"))
+
+      $(".filter-options").slideDown()
+    } else {
+      $(this).text("Open filters ")
+      $(this).append($("<i></i>").addClass("fas fa-bars"))
+
+      $(".filter-options").slideUp()
+    }
+  })
+
+  // Hides all projects that are filtered out
+  function updateFilters() {
+    if (activeFilters.length == 0) {
+      $(".card").show()
+      return
+    }
+
+    $(".card").hide()
+
+    for (const idx in activeFilters) {
+      $(".card").each(function () {
+        tags = $(this).find(".card-tag")
+        tags = $.map(tags, x => x.textContent)
+
+        if (tags.includes(activeFilters[idx])) $(this).show()
+      })
+    }
+  }
+
+  // Refilters when a filter option is clicked
+  $(".filter-option").click(function () {
+    $(this).toggleClass("filter-option-active")
+
+    let option = $(this).text()
+
+    if (activeFilters.includes(option)) {
+      activeFilters = activeFilters.filter(x => x != option)
+      updateFilters()
+    } else {
+      // If this is the first active filter, hide all other projects
+      if (activeFilters.length == 0) $(".card").hide()
+
+      activeFilters.push(option)
+
+      // Shows projects that have this tag
+      $(".card").each(function () {
+        tags = $(this).find(".card-tag")
+        tags = $.map(tags, x => x.textContent)
+
+        if (tags.includes(option)) $(this).show()
+      })
+    }
+  })
+
+  // Clear filters button
+  $(".filter-clear").click(function () {
+    activeFilters = []
+    $(".filter-option").removeClass("filter-option-active")
+    updateFilters()
+  })
 })
