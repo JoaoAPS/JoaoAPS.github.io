@@ -1,0 +1,56 @@
+@media (min-width: 750px) {
+
+.card {
+    width: 45%;
+    
+    &-container {
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    
+    &-title {      
+        &-expand {
+            display: none !important;
+        }
+        cursor: initial;
+    }
+    
+    &-description {
+        display: block;
+        padding: 0 25px;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+        
+    &-link {   
+        display: inline;
+    }
+    
+    &-tag {
+        color: $text-focus;
+        
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f061";
+            margin-right: 10px;
+        }
+        
+        &-title {
+            display: inline;
+            color: $text-unfocus;
+        }
+        
+        &-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+    }
+}
+
+}

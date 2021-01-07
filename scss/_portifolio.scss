@@ -123,6 +123,7 @@
         color: $text-unfocus;
         font-size: 0.7rem;
         margin-bottom: 5px;
+        display: none;
     }
     
     &-tag {
@@ -140,6 +141,7 @@
         &-title {
             font-size: 0.8rem;
             font-weight: 600;
+            display: none;
         }
     }
     
@@ -148,6 +150,8 @@
         color: $emphasis-color-muted;
         font-size: 0.8rem;
         margin-top: 10px;
+        display: none;
+        
         
         &:hover {
             color: $emphasis-color;

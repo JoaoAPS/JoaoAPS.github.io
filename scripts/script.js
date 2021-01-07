@@ -17,9 +17,6 @@ $(document).ready(() => {
   let card_expand_icon = $("<i></i>").addClass("fas fa-angle-down card-title-expand")
   $(".card-title").append(card_expand_icon)
 
-  $(".card-description").hide()
-  $(".card-link").hide()
-  $(".card-tag-title").hide()
   // -------------------------
 
   //--- Navbar toggling ---
@@ -66,6 +63,8 @@ $(document).ready(() => {
 
   //--- Portifolio cards expanding ---
   function expandCard() {
+    if ($(window).width() >= 750) return
+
     $(this).siblings(".card-description").slideToggle()
     $(this).siblings(".card-link").slideToggle()
     $(this).siblings(".card-tag-title").slideToggle()
