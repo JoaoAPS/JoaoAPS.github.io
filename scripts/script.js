@@ -26,7 +26,7 @@ $(document).ready(() => {
       console.log(url)
 
       $(this).click(() => {
-        window.location.href = url
+        window.open(url)
       })
     })
   }
