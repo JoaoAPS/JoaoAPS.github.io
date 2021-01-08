@@ -483,7 +483,7 @@ footer {
 
 @media (min-width: 750px) {
   .content {
-    width: 750px;
+    max-width: 750px;
     margin: 0 auto;
   }
   .sec-title {
@@ -618,13 +618,23 @@ footer {
   }
 }
 
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1000px;
+  }
+}
+
 @media (min-width: 750px) {
   .card {
     width: 45%;
     cursor: pointer;
+    -webkit-transition: -webkit-box-shadow 0.2s;
+    transition: -webkit-box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
   }
   .card-container {
-    max-width: 800px;
+    max-width: 1500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

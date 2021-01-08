@@ -3,9 +3,10 @@
 .card {
     width: 45%;
     cursor: pointer;
-    
+    transition: box-shadow 0.2s;
+        
     &-container {
-        max-width: 800px;
+        max-width: 1500px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
