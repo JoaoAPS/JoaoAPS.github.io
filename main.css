@@ -194,6 +194,10 @@ header {
   color: #505050;
 }
 
+.page-divider {
+  display: none;
+}
+
 .especialidade {
   margin-top: 1rem;
 }
@@ -582,6 +586,14 @@ footer {
     text-align: center;
     -webkit-animation: "fade-in" 1s 1.5s backwards;
             animation: "fade-in" 1s 1.5s backwards;
+  }
+  .page-divider {
+    display: block;
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+    width: 100vw;
   }
   .conhecimentos {
     display: -webkit-box;
