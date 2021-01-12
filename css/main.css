@@ -61,7 +61,7 @@ header {
   height: 50px;
   z-index: 5;
   background-color: whitesmoke;
-  background-image: url("images/header_sky.png");
+  background-image: url("../images/header_sky.png");
   background-size: cover;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -74,7 +74,7 @@ header {
   right: 0;
   padding-top: 5vh;
   background-color: #767676;
-  background-image: url("images/city_night_phone.jpg");
+  background-image: url("../images/city_night_phone.jpg");
   background-size: cover;
   text-align: center;
   z-index: 10;
@@ -157,7 +157,7 @@ header {
   margin-top: 0;
   padding-top: 20vh;
   padding-bottom: 0vh;
-  background: url("images/hero_bg.png");
+  background: url("../images/hero_bg.png");
 }
 
 .foto {
@@ -509,7 +509,7 @@ footer {
     height: 60px;
     padding: 0 15vw;
     margin: 0;
-    background-image: url("images/header_sky.jpg");
+    background-image: url("../images/header_sky.jpg");
     position: fixed;
     top: 0;
     left: 0;
@@ -550,7 +550,7 @@ footer {
     height: 100vh;
     width: 100vw;
     z-index: -1;
-    background: url("images/hero_bg.png");
+    background: url("../images/hero_bg.png");
   }
   #sec-home .container {
     width: 500px;

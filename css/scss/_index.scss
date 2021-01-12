@@ -70,7 +70,7 @@ header {
     z-index: 5;
     
     background-color: $background-color;//darken($background-color, 5%);
-    background-image: url("images/header_sky.png");
+    background-image: url("../images/header_sky.png");
     background-size: cover;
     transition: all 0.5s;
 }
@@ -83,7 +83,7 @@ header {
     padding-top: 5vh;
     
     background-color: $nav-background-color;
-    background-image: url("images/city_night_phone.jpg");
+    background-image: url("../images/city_night_phone.jpg");
     background-size: cover;
     text-align: center;
     z-index: 10;
@@ -157,7 +157,7 @@ header {
     padding-top: 20vh;
     padding-bottom: 0vh;
     
-    background: url("images/hero_bg.png");
+    background: url("../images/hero_bg.png");
     
 }
 

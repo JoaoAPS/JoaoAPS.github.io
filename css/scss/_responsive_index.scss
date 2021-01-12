@@ -41,7 +41,7 @@ header {
     padding: 0 15vw;
     margin: 0;
     
-    background-image: url("images/header_sky.jpg");
+    background-image: url("../images/header_sky.jpg");
     
     position: fixed;
     top: 0;
@@ -80,7 +80,7 @@ header {
     width: 100vw;
     
     z-index: -1;
-    background: url("images/hero_bg.png");
+    background: url("../images/hero_bg.png");
     
     & .container {
         width: 500px;
