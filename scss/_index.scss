@@ -29,10 +29,6 @@ section {
     margin: 4rem 0rem;
 }
 
-.content {
-    padding-top: 70px;
-}
-
 .container {
     margin: 0 1rem;
 }
@@ -158,14 +154,19 @@ header {
 //--- Home ---
 #sec-home {
     margin-top: 0;
-    // padding-top: 15vh;
-    padding-bottom: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 0vh;
+    
+    background: url("images/hero_bg.png");
+    
 }
 
 .foto {
     width: 100vw;
-    //margin-left: -3rem;
     margin-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: block;
 }
 
 .saudacao {

@@ -21,10 +21,6 @@ section {
   margin: 4rem 0rem;
 }
 
-.content {
-  padding-top: 70px;
-}
-
 .container {
   margin: 0 1rem;
 }
@@ -159,12 +155,17 @@ header {
 
 #sec-home {
   margin-top: 0;
-  padding-bottom: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 0vh;
+  background: url("images/hero_bg.png");
 }
 
 .foto {
   width: 100vw;
   margin-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
 }
 
 .saudacao {
@@ -545,13 +546,6 @@ footer {
   .nav_item a:hover {
     color: #1028e0;
     text-decoration: none;
-  }
-  .tmp {
-    position: absolute;
-    bottom: 0;
-    width: 500px;
-    height: 200px;
-    background: darkgreen;
   }
   #sec-home {
     position: relative;
