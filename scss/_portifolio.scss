@@ -4,6 +4,10 @@
         font-size: 1rem;
         color: $emphasis-color-muted;
     }
+    
+    &-content {
+        padding-top: 15vh;
+    }
 }
 
 .container-port-name {

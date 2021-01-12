@@ -289,6 +289,10 @@ footer {
   color: #183da1;
 }
 
+.port-content {
+  padding-top: 15vh;
+}
+
 .container-port-name {
   text-align: center;
 }
@@ -665,6 +669,7 @@ footer {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    margin-top: 50px;
   }
   .card-title {
     cursor: initial;
