@@ -28,7 +28,7 @@ section {
 .sec-title {
   text-transform: uppercase;
   text-align: center;
-  color: #404db0;
+  color: #183da1;
   margin-bottom: 1rem;
 }
 
@@ -39,7 +39,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #1028e0;
+  color: #4272f5;
   font-weight: 500;
 }
 
@@ -103,7 +103,7 @@ header {
 }
 
 .active a {
-  color: #404db0;
+  color: #183da1;
   text-decoration: underline;
 }
 
@@ -188,7 +188,7 @@ header {
 }
 
 .name_last {
-  color: #1028e0;
+  color: #4272f5;
 }
 
 .titulos {
@@ -200,15 +200,7 @@ header {
 }
 
 .especialidade {
-  margin-top: 1rem;
-}
-
-.especialidade:first-of-type {
-  margin-top: 0;
-}
-
-.especialidade-expandable {
-  cursor: pointer;
+  color: #4272f5 !important;
 }
 
 .arrow {
@@ -252,7 +244,7 @@ header {
 }
 
 #sec-projetos .sec-title {
-  color: #1028e0;
+  color: #4272f5;
 }
 
 .emph {
@@ -294,7 +286,7 @@ footer {
 .port-name {
   margin-top: 0.2rem;
   font-size: 1rem;
-  color: #404db0;
+  color: #183da1;
 }
 
 .container-port-name {
@@ -349,7 +341,7 @@ footer {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #404db0;
+  color: #183da1;
   cursor: pointer;
 }
 
@@ -358,7 +350,7 @@ footer {
 }
 
 .project:hover {
-  color: #1028e0;
+  color: #4272f5;
 }
 
 .card {
@@ -406,7 +398,7 @@ footer {
 
 .card-title {
   font-size: 1.2rem;
-  color: #1028e0;
+  color: #4272f5;
   text-align: center;
   padding-bottom: 5px;
   cursor: pointer;
@@ -449,14 +441,14 @@ footer {
 
 .card-link {
   text-align: right;
-  color: #404db0;
+  color: #183da1;
   font-size: 0.8rem;
   margin-top: 10px;
   display: none;
 }
 
 .card-link:hover {
-  color: #1028e0;
+  color: #4272f5;
 }
 
 .card-watermark {
@@ -488,7 +480,7 @@ footer {
 
 @media (min-width: 750px) {
   .content {
-    max-width: 750;
+    max-width: 800px;
     margin: 0 auto;
   }
   .container {
@@ -544,7 +536,7 @@ footer {
     transition: all 0.3s;
   }
   .nav_item a:hover {
-    color: #1028e0;
+    color: #4272f5;
     text-decoration: none;
   }
   #sec-home {
@@ -607,13 +599,16 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .area-atuacao {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30% 0 1;
+            flex: 30% 0 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -624,6 +619,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 20px;
   }
   .area-atuacao h4 {
     margin-bottom: 1rem;

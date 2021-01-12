@@ -196,16 +196,7 @@ header {
 
 //--- Especialidades ---
 .especialidade {
-    //text-align: center;
-    margin-top: 1rem;
-    
-    &:first-of-type {
-        margin-top: 0;
-    }
-    
-    &-expandable {
-        cursor: pointer;
-    }
+    color: $emphasis-color !important;
 }
 
 .arrow {

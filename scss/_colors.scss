@@ -3,7 +3,9 @@ $text-regular: #303030;
 $text-focus: black;
 $text-unfocus: #505050;
 $text-muted: #7f7f7f;
-$emphasis-color: #1028e0;
-$emphasis-color-muted: desaturate($emphasis-color, 40%);
+// $emphasis-color: #1028e0;
+// $emphasis-color-muted: desaturate($emphasis-color, 40%);
+$emphasis-color: #4272f5;
+$emphasis-color-muted: #183da1;
 
 $nav-background-color: darken($background-color, 50%);
