@@ -487,7 +487,11 @@ footer {
 
 @media (min-width: 750px) {
   .content {
-    max-width: 750px;
+    max-width: 750;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 750;
     margin: 0 auto;
   }
   .sec-title {
@@ -542,39 +546,49 @@ footer {
     color: #1028e0;
     text-decoration: none;
   }
-  /*
-.active a {
-    color: $emphasis-color-muted;
-}
-*/
+  .tmp {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    height: 200px;
+    background: darkgreen;
+  }
   #sec-home {
-    padding-top: 35vh;
+    position: relative;
+    padding-top: 25vh;
+    padding-bottom: 0vh;
     height: 100vh;
-    padding-bottom: -60px;
+    width: 100vw;
+    z-index: -1;
+    background: url("images/hero_bg.png");
   }
   #sec-home .container {
     width: 500px;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    z-index: 2;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    -webkit-transform: translateY(-50%) translateX(-100%);
+            transform: translateY(-50%) translateX(-100%);
   }
   .foto {
-    width: 500px;
-    height: 100vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 400px;
     position: absolute;
-    right: 30px;
-    top: 0;
-    z-index: -1;
+    left: 50vw;
+    bottom: 0;
+    z-index: 0;
+    -webkit-animation: "fade-in" 2s 0s backwards;
+            animation: "fade-in" 2s 0s backwards;
   }
   .saudacao {
+    text-align: left;
     padding-left: 100px;
     -webkit-animation: "fade-in" 1s backwards;
             animation: "fade-in" 1s backwards;
   }
   .name {
     display: block;
-    text-align: center;
+    text-align: right;
     -webkit-animation: "fade-in" 1s 0.8s backwards;
             animation: "fade-in" 1s 0.8s backwards;
     margin: 3rem 0;
@@ -583,7 +597,7 @@ footer {
     display: inline-block;
   }
   .titulos {
-    text-align: center;
+    text-align: right;
     -webkit-animation: "fade-in" 1s 1.5s backwards;
             animation: "fade-in" 1s 1.5s backwards;
   }
