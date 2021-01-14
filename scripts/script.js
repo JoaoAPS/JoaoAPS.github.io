@@ -11,7 +11,7 @@ $(document).ready(() => {
   $(".filter-option").removeClass("filter-option-active")
 
   // Portifolio Cards
-  let card_tag_title = $("<div></div>").addClass("card-tag-title").text("Used in project:")
+  let card_tag_title = $("<div></div>").addClass("card-tag-title").text("Usado no projeto:")
   $(".card-tag-container").before(card_tag_title)
 
   let card_expand_icon = $("<i></i>").addClass("fas fa-angle-down card-title-expand")
