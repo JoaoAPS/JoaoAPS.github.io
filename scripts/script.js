@@ -53,7 +53,7 @@ $(document).ready(() => {
     var windscroll = $(window).scrollTop()
 
     // Navbar active section
-    $(".content section").each(function (i) {
+    $("section").each(function (i) {
       if ($(this).position().top <= windscroll) {
         $(".nav .active").removeClass("active")
         $(".nav .nav_item").eq(i).addClass("active")
