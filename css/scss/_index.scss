@@ -61,6 +61,11 @@ a {
     color: whitesmoke;
 }
 
+.right-align {
+    text-align: right;
+    margin-right: 10px;
+}
+
 //--- Header ---
 header {
     position: fixed;
@@ -70,7 +75,7 @@ header {
     z-index: 5;
     
     background-color: $background-color;//darken($background-color, 5%);
-    background-image: url("../images/header_sky.png");
+    background-image: url("../images/header_sky.jpg");
     background-size: cover;
     transition: all 0.5s;
 }
@@ -157,7 +162,7 @@ header {
     padding-top: 20vh;
     padding-bottom: 0vh;
     
-    background: url("../images/hero_bg.png");
+    background: url("../images/hero_bg.jpg");
     
 }
 
