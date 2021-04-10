@@ -162,7 +162,7 @@ header {
   margin-top: 0;
   padding-top: 20vh;
   padding-bottom: 0vh;
-  background: url("../images/hero_bg.jpg");
+  background-image: url("../images/hero_bg.jpg");
 }
 
 .foto {
@@ -555,7 +555,8 @@ footer {
     height: 100vh;
     width: 100vw;
     z-index: -1;
-    background: url("../images/hero_bg.jpg");
+    background-image: url("../images/hero_bg.jpg");
+    background-size: cover;
   }
   #sec-home .container {
     width: 500px;

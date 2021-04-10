@@ -80,7 +80,8 @@ header {
     width: 100vw;
     
     z-index: -1;
-    background: url("../images/hero_bg.jpg");
+    background-image: url("../images/hero_bg.jpg");
+    background-size: cover;
     
     & .container {
         width: 500px;
